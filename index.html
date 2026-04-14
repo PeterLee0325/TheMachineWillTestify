@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Machine Will Testify</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+
+  <script type="module">
+    window.mpReadyPromise = import("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.3").then((module) => {
+      window.mpVision = module.default ?? module;
+      return window.mpVision;
+    });
+  </script>
+</head>
+<body>
+  <div id="overlay">
+    <div class="panel">
+      <h1>THE MACHINE WILL TESTIFY</h1>
+      <p>CLICK TO BEGIN</p>
+      <p>OPEN HAND IN THE CENTRE TO COLLECT EVIDENCE</p>
+      <p>MOVE FAST TO DESTABILISE THE SYSTEM</p>
+      <p>PINCH THUMB + INDEX TO TESTIFY</p>
+      <p>R = RESET &nbsp; D = DEBUG &nbsp; F = FULLSCREEN</p>
+    </div>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
